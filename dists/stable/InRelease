@@ -1,0 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Rovas Tools
+Label: Rovas Tools
+Suite: stable
+Codename: stable
+Date: Fri, 19 Jun 2026 18:36:17 +0000
+Architectures: all
+Components: main
+Description: Rovas Tools APT repository
+MD5Sum:
+ 6887ce7d208d3ff8a2b18ddd9ac01d74 2293 main/binary-all/Packages
+ 8d96520327e98fbcc8d5260549da7611 1114 main/binary-all/Packages.gz
+SHA256:
+ cb11c27e038191e4301f3f9df1b83d1a12b6b3c79dfa838f4c684d60b0850490 2293 main/binary-all/Packages
+ 13657ddf24b1b4789be85ab84d19bca2bf40c2d1a9a14d8d2ffe7b325dcb966f 1114 main/binary-all/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iJEEARYKADkWIQTQXOBvg/GYrIRbmxpXmIqOXgjsYQUCajWN5BsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMiwyLDEACgkQV5iKjl4I7GFL5gEAlc4KdLYoyl/znp3dO/Ey
+IU4xMLJkoaYFD2PyjyurdPMBAIY0enIwYbwlnRqOwAhbVKUJ8xFIZXVUw0rI/QS9
+cQ0D
+=aw1r
+-----END PGP SIGNATURE-----
