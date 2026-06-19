@@ -1,0 +1,51 @@
+Package: rovas-browser-tools
+Version: 0.1.7
+Architecture: all
+Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
+Depends: rovas-language-pack, xdg-utils
+Recommends: chromium-browser | chromium | google-chrome-stable | brave-browser
+Filename: pool/main/rovas-browser-tools.deb
+Size: 2450
+MD5sum: d48ca9fdf4c4a0d88860a33e67c45548
+SHA1: 0fdcaa07a68d40c8fcbac73f62d063bef9b0bc26
+SHA256: 4503390d1abc9a2a0085ac65ce1c83cd9451d87b947cfa08eee276041478554e
+Section: localization
+Priority: optional
+Description: Browser launcher and extension policy for Rovas web browsing
+ Adds Chromium-family browser integration and managed policy files that
+ request the Rovas Atiro Chrome extension. The package does not fork or
+ replace Chromium and does not install a separate desktop shortcut.
+
+Package: rovas-language-pack
+Version: 0.2.14
+Architecture: all
+Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
+Depends: locales, fontconfig, gettext, python3, zenity, policykit-1, policykit-1-gnome, fonts-noto-core, language-pack-hu, language-pack-hu-base, language-pack-gnome-hu, language-pack-gnome-hu-base, xkb-data, x11-xserver-utils
+Filename: pool/main/rovas-language-pack.deb
+Size: 28250
+MD5sum: 20f25d9490dc458f83d2bfc10d6da394
+SHA1: 8c3cbf332c930727386f7e7191552577f591dda5
+SHA256: 7bcadf133bd00a3136af1f95e2f615e57957341f6ac2a2ce994ebc0b3d02f55f
+Section: localization
+Priority: optional
+Description: Rovas (Old Hungarian) locale and UI translations
+ Reuses Hungarian Linux translations and provides Rovas-script
+ message catalogs for locale hu_HU.UTF-8@rovas on Xubuntu/XFCE.
+ Includes an automatic catalog refresh tool for newly installed apps.
+
+Package: rovas-tools
+Version: 0.3.0
+Architecture: all
+Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
+Depends: rovas-language-pack, rovas-browser-tools, python3, python3-gi, gir1.2-gtk-3.0, policykit-1
+Filename: pool/main/rovas-tools.deb
+Size: 5047746
+MD5sum: 923719f192d7c2c92751989627a4c822
+SHA1: ff94a8c46275580ccc4515152ddf5cc18b028c25
+SHA256: 55673a88dc1ee4486e3ba480215240ea8c7f9cb42e0156e1395089aab7da13ed
+Section: localization
+Priority: optional
+Description: Rovas OS control center
+ Provides one lightweight GTK control app for Rovas UI mode, keyboard setup,
+ optional browser tools, and translation maintenance actions.
+
