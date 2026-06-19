@@ -1,9 +1,0 @@
-*.deb binary
-*.gpg binary
-*.gz binary
-rovas-tools-archive-keyring.gpg binary
-InRelease -text
-Release -text
-Packages -text
-install.sh text eol=lf
-index.html text eol=lf
