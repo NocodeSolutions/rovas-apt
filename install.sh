@@ -19,4 +19,4 @@ deb [arch=all signed-by=/usr/share/keyrings/rovas-tools-archive-keyring.gpg] htt
 LIST
 
 apt-get update
-apt-get install -y rovas-tools
+apt-get install -y rovas-desktop
