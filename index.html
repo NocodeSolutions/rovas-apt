@@ -4,13 +4,198 @@
   <meta charset="utf-8">
   <title>Rovas Tools APT Repository</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f1ea;
+      --panel: #fffaf0;
+      --text: #24211c;
+      --muted: #6c6255;
+      --line: #d7cab8;
+      --accent: #2f7d55;
+      --code: #181a1f;
+      --code-text: #f7f3ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #181715;
+        --panel: #24211d;
+        --text: #f2eadc;
+        --muted: #b9ad9d;
+        --line: #3b352d;
+        --accent: #59b77d;
+        --code: #101114;
+        --code-text: #f7f3ea;
+      }
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", "Noto Sans", sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.05;
+    }
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 1.25rem;
+    }
+    p {
+      margin: 0 0 14px;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 68ch;
+    }
+    .language-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .language-switcher button {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      padding: 8px 12px;
+    }
+    .language-switcher button[aria-pressed="true"] {
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 700;
+    }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin: 18px 0;
+      padding: 20px;
+    }
+    pre {
+      background: var(--code);
+      border-radius: 6px;
+      color: var(--code-text);
+      overflow-x: auto;
+      padding: 14px;
+    }
+    code {
+      font-family: "Cascadia Mono", "Consolas", monospace;
+      font-size: 0.95em;
+    }
+    ul {
+      margin: 0 0 0 20px;
+      padding: 0;
+    }
+    a {
+      color: var(--accent);
+    }
+    [data-lang="hu"] {
+      display: none;
+    }
+    body.lang-hu [data-lang="en"] {
+      display: none;
+    }
+    body.lang-hu [data-lang="hu"] {
+      display: block;
+    }
+  </style>
 </head>
-<body>
-  <h1>Rovas Tools APT Repository</h1>
-  <p>Install:</p>
-  <pre>curl -fsSL https://nocodesolutions.github.io/rovas-apt/install.sh | sudo bash</pre>
-  <p>Manual source:</p>
-  <pre>deb [arch=all signed-by=/usr/share/keyrings/rovas-tools-archive-keyring.gpg] https://nocodesolutions.github.io/rovas-apt stable main</pre>
-  <p>Contact: nocodesolutions@outlook.com</p>
+<body class="lang-en">
+  <main>
+    <header>
+      <h1>Rovas Tools APT Repository</h1>
+      <p class="lede" data-lang="en">Packages for installing and updating the Rovas Linux tool set on Ubuntu, Xubuntu, Linux Mint, and compatible Debian-based systems.</p>
+      <p class="lede" data-lang="hu">Csomagtároló a Rovás Linux eszközkészlet telepítéséhez és frissítéséhez Ubuntu, Xubuntu, Linux Mint és kompatibilis Debian-alapú rendszereken.</p>
+      <nav class="language-switcher" aria-label="Language selector">
+        <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-set-lang="hu" aria-pressed="false">Magyar</button>
+      </nav>
+    </header>
+
+    <section data-lang="en">
+      <h2>What this repository provides</h2>
+      <p>This APT repository contains the Rovas desktop packages, fonts, keyboard layout, Hungarian locale support, transliterated message catalogs, browser support, wallpapers, and the Rovas Tools control panel.</p>
+      <p>The easiest install path is the script below. It adds the signing key, configures the APT source, refreshes package metadata, and installs <code>rovas-desktop</code>.</p>
+      <pre><code>curl -fsSL https://nocodesolutions.github.io/rovas-apt/install.sh | sudo bash</code></pre>
+    </section>
+
+    <section data-lang="hu">
+      <h2>Mit ad ez a tároló</h2>
+      <p>Ez az APT tároló tartalmazza a Rovás asztali csomagokat, betűkészleteket, billentyűzetkiosztást, magyar locale támogatást, átírt üzenetkatalógusokat, böngészőtámogatást, háttérképeket és a Rovás Eszközök vezérlőpanelt.</p>
+      <p>A legegyszerűbb telepítés az alábbi paranccsal történik. Hozzáadja az aláírókulcsot, beállítja az APT forrást, frissíti a csomaglistát, majd telepíti a <code>rovas-desktop</code> csomagot.</p>
+      <pre><code>curl -fsSL https://nocodesolutions.github.io/rovas-apt/install.sh | sudo bash</code></pre>
+    </section>
+
+    <section data-lang="en">
+      <h2>Manual APT source</h2>
+      <p>If you prefer to inspect the setup manually, use this source entry with the repository keyring at <code>/usr/share/keyrings/rovas-tools-archive-keyring.gpg</code>.</p>
+      <pre><code>deb [arch=all signed-by=/usr/share/keyrings/rovas-tools-archive-keyring.gpg] https://nocodesolutions.github.io/rovas-apt stable main</code></pre>
+      <h2>Published packages</h2>
+      <ul>
+        <li><code>rovas-desktop</code> and <code>rovas-full</code> for complete installs</li>
+        <li><code>rovas-tools</code> for the control panel and command line utility</li>
+        <li><code>fonts-rovas</code>, <code>rovas-keyboard</code>, <code>rovas-locale-hu</code>, and <code>rovas-l10n-hu</code> for core language support</li>
+        <li><code>rovas-browser-chromium</code> and <code>rovas-wallpapers</code> for optional desktop integration</li>
+      </ul>
+    </section>
+
+    <section data-lang="hu">
+      <h2>Kézi APT forrás</h2>
+      <p>Ha kézzel szeretné ellenőrizni a beállítást, ezt a forrássort használja a <code>/usr/share/keyrings/rovas-tools-archive-keyring.gpg</code> kulcstárral.</p>
+      <pre><code>deb [arch=all signed-by=/usr/share/keyrings/rovas-tools-archive-keyring.gpg] https://nocodesolutions.github.io/rovas-apt stable main</code></pre>
+      <h2>Közzétett csomagok</h2>
+      <ul>
+        <li><code>rovas-desktop</code> és <code>rovas-full</code> teljes telepítéshez</li>
+        <li><code>rovas-tools</code> a vezérlőpanelhez és parancssori eszközhöz</li>
+        <li><code>fonts-rovas</code>, <code>rovas-keyboard</code>, <code>rovas-locale-hu</code> és <code>rovas-l10n-hu</code> az alap nyelvi támogatáshoz</li>
+        <li><code>rovas-browser-chromium</code> és <code>rovas-wallpapers</code> opcionális asztali integrációhoz</li>
+      </ul>
+    </section>
+
+    <section data-lang="en">
+      <h2>Trust and contact</h2>
+      <p>Repository metadata is signed by the Rovas Tools APT key. Contact: <a href="mailto:nocodesolutions@outlook.com">nocodesolutions@outlook.com</a>.</p>
+    </section>
+
+    <section data-lang="hu">
+      <h2>Bizalom és kapcsolat</h2>
+      <p>A tároló metaadatait a Rovás Tools APT kulcs írja alá. Kapcsolat: <a href="mailto:nocodesolutions@outlook.com">nocodesolutions@outlook.com</a>.</p>
+    </section>
+  </main>
+  <script>
+    const buttons = document.querySelectorAll("[data-set-lang]");
+    const setLanguage = (lang) => {
+      document.body.classList.toggle("lang-hu", lang === "hu");
+      document.body.classList.toggle("lang-en", lang === "en");
+      document.documentElement.lang = lang;
+      buttons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
+      });
+    };
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => setLanguage(button.dataset.setLang));
+    });
+  </script>
 </body>
 </html>
