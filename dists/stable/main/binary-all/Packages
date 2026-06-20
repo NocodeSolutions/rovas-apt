@@ -145,7 +145,7 @@ Description: Optional wallpapers for Rovas Linux
  does not change any user's wallpaper.
 
 Package: rovas-tools
-Version: 1.0.8
+Version: 1.0.9
 Section: localization
 Priority: optional
 Architecture: all
@@ -159,6 +159,6 @@ Description: Rovas Tools control panel and command line utility
  approved system writes. It does not own fonts, wallpapers, locale files,
  translation catalogs, keyboard assets, or browser payloads.
 Filename: pool/main/rovas-tools.deb
-Size: 99452
-MD5sum: f5880c89cca235688271fb0ed3219d83
-SHA256: abcefafaaf5851ddb9d2c087c9ebb1e8b10bba334e573c64253766b5b4747699
+Size: 60526
+MD5sum: d599d9985bdc16e84aa0465a41da8124
+SHA256: c67dc2dc29fd28097264c1a312df018522c604178765a13a810f83629d5c4919
