@@ -5,10 +5,10 @@ Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: fontconfig
 Recommends: fonts-noto-core
 Filename: pool/main/fonts-rovas.deb
-Size: 756438
-MD5sum: 90779128cc1ce8c3c01eaaf91e4459db
-SHA1: 4e3615b013c292c9a8a34fedafa3127847a40449
-SHA256: 3ee71b0415ab7c4c55e6f7817c2d4a07e782cc2b10cdd69952aa1baeed2cdf72
+Size: 756644
+MD5sum: 3c669b4ba60337c2ec12e6a109c9f710
+SHA1: cfda9c624faadcbbef7762bda84af822568706f7
+SHA256: 0b2c8f58033889536ff2f4c09b0fca1799fbe7644c057882d31037d3b63d3e1d
 Section: fonts
 Priority: optional
 Description: Rovas fonts for Old Hungarian script
@@ -21,10 +21,10 @@ Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: rovas-common, xdg-utils
 Recommends: chromium-browser | chromium | google-chrome-stable | brave-browser
 Filename: pool/main/rovas-browser-chromium.deb
-Size: 1828
-MD5sum: f528065e5756514828b4916ab5f32c5a
-SHA1: ea5ff120c56a2cd88560eef7c7a936ae8e2e8826
-SHA256: 83db240fecafc0ecde868bef47eb83088d70006ebaf281743190baaec642af5a
+Size: 1826
+MD5sum: 6f1faea28feebacc143829edcefb00a2
+SHA1: 7ca273e0b42ba9cc46bc34902786b6a69fc54f1a
+SHA256: 44e731fd33d14011b2a59515f94ec3d05c262238b5a5c5c82fb1e791924d5d23
 Section: localization
 Priority: optional
 Description: Chromium browser integration payload for Rovas Linux
@@ -37,10 +37,10 @@ Version: 1.0.1
 Architecture: all
 Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Filename: pool/main/rovas-common.deb
-Size: 17998
-MD5sum: 3cb7e348ef514bd5b42766f4ede74506
-SHA1: 7eaf212b66799dd5c8af5be52b2c7c9ed7fedd55
-SHA256: b03ccf0d840a9c63a5a7c7f26c8942cdb09721378bfcc4b59003e33cc9375f61
+Size: 18002
+MD5sum: 4191e173218a2a85580873ad85dec8a4
+SHA1: 8300bba60a83a862aff5228293e7b028df103d0e
+SHA256: 2a649655156b96fb5c477235e26858fb002fd80882052a7c4c439ccdde1ad2ab
 Section: localization
 Priority: optional
 Description: Shared metadata for Rovas Linux components
@@ -48,16 +48,16 @@ Description: Shared metadata for Rovas Linux components
  helper data used by Rovas tools and package diagnostics.
 
 Package: rovas-desktop
-Version: 1.0.6
+Version: 1.0.7
 Architecture: all
 Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
-Depends: rovas-common (>= 1.0.1), rovas-tools (>= 1.0.15), fonts-rovas, rovas-keyboard (>= 1.0.1), rovas-locale-hu, rovas-l10n-hu (>= 1.0.3), python3, python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, gir1.2-pango-1.0, policykit-1, pkexec, locales, fontconfig, gettext, language-pack-hu, language-pack-hu-base, language-pack-gnome-hu, language-pack-gnome-hu-base, xkb-data, x11-xserver-utils
+Depends: rovas-common (>= 1.0.1), rovas-tools (>= 1.0.16), fonts-rovas, rovas-keyboard (>= 1.0.1), rovas-locale-hu, rovas-l10n-hu (>= 1.0.3), python3, python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, gir1.2-pango-1.0, policykit-1, pkexec, locales, fontconfig, gettext, language-pack-hu, language-pack-hu-base, language-pack-gnome-hu, language-pack-gnome-hu-base, xkb-data, x11-xserver-utils
 Conflicts: rovas-wallpapers
 Filename: pool/main/rovas-desktop.deb
-Size: 786
-MD5sum: 6890972e93de3d12e966f5d9e10a8946
-SHA1: edcc1689447bf69dbc4f243ee602308a4822b461
-SHA256: 6687139763618848b8f2a0451a6437b20e500248275451b10b75b7c090059aa9
+Size: 784
+MD5sum: 80c4e39131196907416aac6d6f77093f
+SHA1: 2a51bd143aaf4da13806d7b7ddea2f20fc44661b
+SHA256: 21ba687fbdc9c37cc7e648871c2abe91b9817e904b39f9bf1f3c32ac79f3fe82
 Section: localization
 Priority: optional
 Description: Core Rovas desktop support
@@ -71,10 +71,10 @@ Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: rovas-desktop, rovas-browser-chromium
 Conflicts: rovas-wallpapers
 Filename: pool/main/rovas-full.deb
-Size: 624
-MD5sum: 07ff8dae55a13b644bf4fe3e0b7512fa
-SHA1: 4ab457891fce9bb71d7a396bd4e07869beb42cb2
-SHA256: 6816fee35c3967a28d54edd31a30fea1a4b5a86752991315a93ddc54d3afd366
+Size: 622
+MD5sum: 01f2a4cd3e211c6b00d2b5b6aab990a4
+SHA1: 20127d7781b8a4611d1b596927caa77aaa5d4a35
+SHA256: 50858d4341941da5dba4f6b558f7ca71b6bc7cdbe505c7c70b9ab0140f85c958
 Section: localization
 Priority: optional
 Description: Full Rovas desktop and browser support
@@ -87,10 +87,10 @@ Architecture: all
 Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: xkb-data, x11-xserver-utils
 Filename: pool/main/rovas-keyboard.deb
-Size: 1526
-MD5sum: 02c173040fe6c295826b22e0baa5ea13
-SHA1: 0a104e4510138caadfdb9b7295f98d391e8e8d6c
-SHA256: ba2c9c515abdf688ed8670a0f53512c81d69b2db7411dbaf21113435d9c0393d
+Size: 1522
+MD5sum: 7d23e81d5da8a43104ad40c593ae90cb
+SHA1: 30e8b5937e436132c952d6a25f63a70cdc95f340
+SHA256: 2b3e4271384f52ba3d1856bf73d2b82ff4bac878ac75ff1701fa0661f06c388a
 Section: localization
 Priority: optional
 Description: Rovas keyboard assets
@@ -104,10 +104,10 @@ Architecture: all
 Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: gettext, python3, rovas-common (>= 1.0.1), language-pack-hu, language-pack-hu-base, language-pack-gnome-hu, language-pack-gnome-hu-base
 Filename: pool/main/rovas-l10n-hu.deb
-Size: 1338
-MD5sum: d914a7d7e5c6fc2403ec1c4d2505721e
-SHA1: 734254daccf4695d10b7ad7c927d9842fb06fb36
-SHA256: 8d56aea0b85c6919ad4db6ce20461b9bfd29ac2cdf697bc19b33287950580e88
+Size: 1332
+MD5sum: cf8f2d0031653b7ecb0c678b7123572e
+SHA1: 6ab9d5fd652b547dbb0e0b21f0b8f87c6e82d5f2
+SHA256: 2910d4dbe70656c5d7cbcdfbb67e3e7cfdf7f0c044dc610b6a70205ba6abbc76
 Section: localization
 Priority: optional
 Description: Rovas-script Hungarian translation catalogs
@@ -121,10 +121,10 @@ Architecture: all
 Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: locales
 Filename: pool/main/rovas-locale-hu.deb
-Size: 4754
-MD5sum: 455cb542d51dc01c76cc63de7ae63eb2
-SHA1: da4dc7ec2fea35a7dfff99a02910523544a14795
-SHA256: 110c7c37ce21374dc6992e8cd4bdfa18075bb95545d6adeb3a5afa86c1044a8e
+Size: 4750
+MD5sum: c7998aea4db07d56f92b7dbdb5423386
+SHA1: ba4a351f13f739324071a129963b6a631e93d8c9
+SHA256: 8d4e096e41cef08a83dad6538c70f39eb9c83d94c44e5ced829b2ecf7b1022ff
 Section: localization
 Priority: optional
 Description: Hungarian Rovas locale variant support
@@ -132,17 +132,17 @@ Description: Hungarian Rovas locale variant support
  with Old Hungarian script support.
 
 Package: rovas-tools
-Version: 1.0.15
+Version: 1.0.16
 Architecture: all
 Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: python3, python3-gi, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, gir1.2-pango-1.0, python3-gi-cairo, rovas-common (>= 1.0.1), policykit-1, pkexec
 Recommends: fonts-rovas, rovas-keyboard, rovas-locale-hu, rovas-l10n-hu, zenity, policykit-1-gnome
 Suggests: rovas-browser-chromium
 Filename: pool/main/rovas-tools.deb
-Size: 55682
-MD5sum: c3bd28c689e58a21607116f06225cbf4
-SHA1: 597eff280d57dd00234ff582577748a6bffb01ab
-SHA256: 8ef331b32a7768aa4e67d36435bae057f8332cf3bd209d65f9015247cea68ca6
+Size: 55674
+MD5sum: 012f5563650ae4e64b155229c07c09e7
+SHA1: 1460353a6420fea99b95e4c564044eb575d1fb65
+SHA256: 0324913edc507bc4057ea77f34d16fa510991510a5a1774a7fa1604e75754858
 Section: localization
 Priority: optional
 Description: Rovas Tools control panel and command line utility
