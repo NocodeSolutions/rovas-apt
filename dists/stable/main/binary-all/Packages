@@ -129,26 +129,6 @@ Description: Hungarian Rovas locale variant support
  Provides the hu_HU.UTF-8@rovas locale variant metadata for Hungarian
  with Old Hungarian script support.
 
-Package: rovas-tools
-Version: 1.0.7
-Architecture: all
-Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
-Depends: python3, python3-gi, gir1.2-gtk-3.0, python3-gi-cairo, rovas-common, policykit-1
-Recommends: fonts-rovas, rovas-keyboard, rovas-locale-hu, rovas-l10n-hu, zenity, policykit-1-gnome
-Suggests: rovas-wallpapers, rovas-browser-chromium
-Filename: pool/main/rovas-tools.deb
-Size: 56998
-MD5sum: 67ca2e316f0c37829ec0ee74b7e87946
-SHA1: f4c197d24fbbdaeab2d8a65dae54a7301767d8f4
-SHA256: 4c636b864227e21836cd7159d2843b434c441150c780a075f4aa4ec0c104f79a
-Section: localization
-Priority: optional
-Description: Rovas Tools control panel and command line utility
- Provides the GTK control panel, rovasctl CLI, Rovas UI mode switching,
- diagnostics, backup and revert support, and a small privileged helper for
- approved system writes. It does not own fonts, wallpapers, locale files,
- translation catalogs, keyboard assets, or browser payloads.
-
 Package: rovas-wallpapers
 Version: 1.0.0
 Architecture: all
@@ -164,3 +144,21 @@ Description: Optional wallpapers for Rovas Linux
  Provides optional Rovas desktop background images. Installing this package
  does not change any user's wallpaper.
 
+Package: rovas-tools
+Version: 1.0.8
+Section: localization
+Priority: optional
+Architecture: all
+Depends: python3, python3-gi, gir1.2-gtk-3.0, python3-gi-cairo, rovas-common, policykit-1
+Recommends: fonts-rovas, rovas-keyboard, rovas-locale-hu, rovas-l10n-hu, zenity, policykit-1-gnome
+Suggests: rovas-wallpapers, rovas-browser-chromium
+Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
+Description: Rovas Tools control panel and command line utility
+ Provides the GTK control panel, rovasctl CLI, Rovas UI mode switching,
+ diagnostics, backup and revert support, and a small privileged helper for
+ approved system writes. It does not own fonts, wallpapers, locale files,
+ translation catalogs, keyboard assets, or browser payloads.
+Filename: pool/main/rovas-tools.deb
+Size: 99452
+MD5sum: f5880c89cca235688271fb0ed3219d83
+SHA256: abcefafaaf5851ddb9d2c087c9ebb1e8b10bba334e573c64253766b5b4747699
