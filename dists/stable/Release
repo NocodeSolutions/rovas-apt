@@ -2,13 +2,13 @@ Origin: Rovas Tools
 Label: Rovas Tools
 Suite: stable
 Codename: stable
-Date: Sat, 20 Jun 2026 15:52:45 +0000
+Date: Sat, 20 Jun 2026 17:09:34 +0000
 Architectures: all
 Components: main
 Description: Rovas Tools APT repository
 MD5Sum:
- 60175e06e7547cb2fc8c1da0fad51af1 6469 main/binary-all/Packages
- 7cf3be977b4a2859b77618ae31442d95 2383 main/binary-all/Packages.gz
+ b29254f5951169325d67beb366d25685 6469 main/binary-all/Packages
+ 0420f514cf939a701074da7ba6cbb72f 2386 main/binary-all/Packages.gz
 SHA256:
- a91258dffc8c46d4c08c67f92b98803be834d9169d046c240877b13748902e25 6469 main/binary-all/Packages
- 21c096cde09bc4d6ade3a87a01736a3712b44fb3613b700ae998a5fa4be13880 2383 main/binary-all/Packages.gz
+ 0036eff047422967f442b9b9b2803fff80d8e71ba7306796745747cdc7ea19b9 6469 main/binary-all/Packages
+ 4c51d4fd70e170b58092cbb0870ba8870fbddf92930e2db79f6aff6947f43c58 2386 main/binary-all/Packages.gz
