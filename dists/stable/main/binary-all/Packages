@@ -5,10 +5,10 @@ Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: rovas-language-pack, xdg-utils
 Recommends: chromium-browser | chromium | google-chrome-stable | brave-browser
 Filename: pool/main/rovas-browser-tools.deb
-Size: 2450
-MD5sum: 4e2b7d81e1748c1b20b0f07184bf51f1
-SHA1: 2b14cefe4e080d02b3cc3802c4e7150057e5c6bf
-SHA256: e510f716fd23e7a76a6d203ea10cd195872e82f8f9bc7f44f4a3a3929070e2ff
+Size: 2454
+MD5sum: 1d6334f23a2087db8d86fbbe5f19b259
+SHA1: 88d8902aacf98c1bb5c86f0746fc958ab357c939
+SHA256: ddbf9e548136c8eb9e556a73c7604edeff0d895ab93d0834eae52b2b97f49d09
 Section: localization
 Priority: optional
 Description: Browser launcher and extension policy for Rovas web browsing
@@ -22,10 +22,10 @@ Architecture: all
 Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: locales, fontconfig, gettext, python3, zenity, policykit-1, policykit-1-gnome, fonts-noto-core, language-pack-hu, language-pack-hu-base, language-pack-gnome-hu, language-pack-gnome-hu-base, xkb-data, x11-xserver-utils
 Filename: pool/main/rovas-language-pack.deb
-Size: 28326
-MD5sum: e0580515e3c24f8edf2b0eb20e340486
-SHA1: ee9d1d72779a7f37d7b42709f22c38a408234a8c
-SHA256: f2d880d2ef596b2127e85f765573301ee25425c6d7b0d9a66cad64eaec46e1ae
+Size: 28334
+MD5sum: 78eacd1661b8ac5c128a72b06cd03ef8
+SHA1: 58690154beefd60d5cad08c445604faf98961ed2
+SHA256: 50d131d0d07548655b045351645833af9763e2e946c7e99a5529806d101e775d
 Section: localization
 Priority: optional
 Description: Rovas (Old Hungarian) locale and UI translations
@@ -34,15 +34,15 @@ Description: Rovas (Old Hungarian) locale and UI translations
  Includes an automatic catalog refresh tool for newly installed apps.
 
 Package: rovas-tools
-Version: 0.3.10
+Version: 0.3.11
 Architecture: all
 Maintainer: Nocode Solutions <nocodesolutions@outlook.com>
 Depends: rovas-language-pack, rovas-browser-tools, python3, python3-gi, gir1.2-gtk-3.0, policykit-1
 Filename: pool/main/rovas-tools.deb
-Size: 5054624
-MD5sum: 8088f455cbf091ba11b8fdfb78b921ba
-SHA1: 5a6d5c79cfba0284667dd7843e1945250a6bb772
-SHA256: 61507eb8d671b96655e48888f97716d7d14468c1843a78c3f42b49cbf8895795
+Size: 5054714
+MD5sum: 3ffc523023820c2370ce6a06a302fe8a
+SHA1: 5ac0c6ee59e5f9b93ce005afa724a88f7cfaaa0c
+SHA256: fcdedb62b4135b91bd58b7c7251f6a3eb841348aafe12b767562f4a92086beed
 Section: localization
 Priority: optional
 Description: Rovas OS control center
