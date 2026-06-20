@@ -5,20 +5,20 @@ Origin: Rovas Tools
 Label: Rovas Tools
 Suite: stable
 Codename: stable
-Date: Sat, 20 Jun 2026 01:15:14 +0000
+Date: Sat, 20 Jun 2026 01:38:02 +0000
 Architectures: all
 Components: main
 Description: Rovas Tools APT repository
 MD5Sum:
- 1aae828b4bad11bc67925223069f021c 2293 main/binary-all/Packages
- f96fb5623e470f5501545487ae5af23e 1112 main/binary-all/Packages.gz
+ d0782ca171be35c199147d28933909e7 2293 main/binary-all/Packages
+ 9e01cfd4b704efa13ae9e655710b22b0 1111 main/binary-all/Packages.gz
 SHA256:
- 0c0a51ae91b34e5ed371cf737d6ba47d06b3f7988bc7366c77119cd9eadf6366 2293 main/binary-all/Packages
- 56aea5ea7e2bfde6727df5034353955e834b25ef92ee57e2a27653e69196766d 1112 main/binary-all/Packages.gz
+ 9410e04c804cc4b59da8c6052506e61eb9a2ee0080cab20124deebeca9f84c42 2293 main/binary-all/Packages
+ c8c9cefefb54f827b6713e2e396f126aedb28091ed4f655a3d62a09e369de85c 1111 main/binary-all/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQTQXOBvg/GYrIRbmxpXmIqOXgjsYQUCajXpogAKCRBXmIqOXgjs
-YbBsAPwIGm8RXWAcR/fhsEcFf7BkiREUYyjl5qPB0unZbqmgggD/W7j+JPUauai4
-TqVwpz6wxjOvS4s1isxg8lBnZlSJBA8=
-=Nlav
+iHUEARYKAB0WIQTQXOBvg/GYrIRbmxpXmIqOXgjsYQUCajXu+gAKCRBXmIqOXgjs
+YRo/AQCoydwrELiToGp+lQGwZ6K1/wN8QDVFYfwTUU/CUaQRGwEAwYG962PM+ZE4
+fBvbpY+pEG6s+XCkFXSueauPBB5trg4=
+=D3wU
 -----END PGP SIGNATURE-----
